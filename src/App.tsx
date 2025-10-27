@@ -1,12 +1,6 @@
-import { Button } from "./components/ui/button";
+import Counter from "./exercises/Counter";
 
 function App() {
-  return (
-    <div>
-      <h1 className="text-3xl text-amber-400">Playground!</h1>
-
-      <Button>Click</Button>
-    </div>
-  );
+  return <Counter />;
 }
 export default App;
