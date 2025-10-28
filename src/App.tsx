@@ -1,6 +1,6 @@
-import Counter from "./exercises/Counter";
+import User from "./components/User";
 
 function App() {
-  return <Counter />;
+  return <User name="stenix" age={32} isStudent={false} />;
 }
 export default App;
