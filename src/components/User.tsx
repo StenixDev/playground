@@ -1,16 +1,23 @@
-// type UserTypes = {
-//   name: string;
-//   age: number;
-//   isStudent: boolean;
-// };
+import type { FC } from "react";
 
-interface UserTypes {
+type UserTypes = {
   name: string;
   age: number;
   isStudent: boolean;
+};
+
+//import type { ReactNode } from "react";
+
+/*
+interface UserTypes {
+  children: ReactNode;
 }
 
-function User({ name, age, isStudent }: UserTypes) {
+function User({ children }: UserTypes) {
+  return <div>{children}</div>;
+}*/
+
+const User: FC<UserTypes> = ({ name, age, isStudent }) => {
   return (
     <div>
       <h1>{name}</h1>
@@ -18,5 +25,6 @@ function User({ name, age, isStudent }: UserTypes) {
       <h1>{isStudent}</h1>
     </div>
   );
-}
+};
+
 export default User;
