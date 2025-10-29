@@ -1,7 +1,8 @@
 type Info = {
-  id: number;
+  id?: number;
   name: string;
   email: string;
+  age: number;
 };
 
 type AdminInfoList = Info & {

@@ -1,15 +1,13 @@
 import { type Info } from "./types";
 
-type UserInfoProps = {
-  user: Info;
-};
+type AdminInfo = Info & { role?: string };
 
-function UserInfo({ user: { name, email } }: UserInfoProps) {
+function UserInfo({ name, age, role }: AdminInfo) {
   return (
     <div>
-      <h1 className="text-2xl">User</h1>
+      <h1 className="text-2xl">{role ? role : "User"}</h1>
       <p>{name}</p>
-      <p>{email}</p>
+      <p>{age}</p>
     </div>
   );
 }
