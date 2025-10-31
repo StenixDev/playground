@@ -1,10 +1,6 @@
-import UserInfo from "./exercises/user/UserInfo";
+import UserProfile from "./exercises/UserProfile";
 
 function App() {
-  return (
-    <div>
-      <UserInfo name="stenix" age={34} email="e@e.e" role="admin" />
-    </div>
-  );
+  return <UserProfile />;
 }
 export default App;
