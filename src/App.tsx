@@ -1,6 +1,6 @@
-import UserProfile from "./exercises/UserProfile";
+import Todo from "./exercises/Todo";
 
 function App() {
-  return <UserProfile />;
+  return <Todo />;
 }
 export default App;
