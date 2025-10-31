@@ -37,7 +37,7 @@ function Todo() {
         />
         <br />
 
-        <Button>Submit</Button>
+        <Button className="cursor-pointer">Submit</Button>
       </form>
 
       <hr />

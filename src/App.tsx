@@ -1,6 +1,12 @@
-import Todo from "./exercises/Todo";
+import FocusInput from "./components/FocusInput";
+import Form from "./components/Form";
 
 function App() {
-  return <Todo />;
+  return (
+    <>
+      <Form />
+      <FocusInput />
+    </>
+  );
 }
 export default App;
