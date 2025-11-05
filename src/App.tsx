@@ -1,12 +1,15 @@
-import FocusInput from "./components/FocusInput";
-import Form from "./components/Form";
+import Counter from "./components/Counter";
+import { Button } from "./components/ui/button";
 
 function App() {
   return (
-    <>
-      <Form />
-      <FocusInput />
-    </>
+    <div>
+      <h1 className="text-3xl text-amber-400">Playground!</h1>
+
+      <Counter />
+
+      <Button>Click x</Button>
+    </div>
   );
 }
 export default App;
