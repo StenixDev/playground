@@ -1,9 +1,10 @@
-import UserList from "./components/ui/UserList";
+import MyForm from "./components/AdvancedForm";
+import Form from "./components/Form";
 
 function App() {
   return (
     <div>
-      <UserList />
+      <MyForm />
     </div>
   );
 }
