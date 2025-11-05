@@ -1,24 +1,13 @@
 import { useReducer } from "react";
 
-type State = { count: number };
+import { counterReducer, type CounterState } from "../reducers/CounterReducer";
 
-type Action = { type: "INCREMENT" } | { type: "DECREMENT" };
-
-function reducer(state: State, action: Action) {
-  switch (action.type) {
-    case "INCREMENT":
-      return { ...state, count: state.count + 1 };
-
-    case "DECREMENT":
-      return { ...state, count: state.count - 1 };
-
-    default:
-      throw new Error("Unknown Action");
-  }
-}
+const initialState: CounterState = {
+  count: 0,
+};
 
 const Counter = () => {
-  const [state, dispatch] = useReducer(reducer, { count: 0 });
+  const [state, dispatch] = useReducer(counterReducer, initialState);
   return (
     <div>
       <p>{state.count}</p>
