@@ -1,9 +1,9 @@
-import MyComponent from "./exercises/MyComponent";
+import UserList from "./components/ui/UserList";
 
 function App() {
   return (
     <div>
-      <MyComponent />
+      <UserList />
     </div>
   );
 }
