@@ -1,4 +1,10 @@
+import BasicAnimations from "./components/BasicAnimation";
+import "./style.css";
 function App() {
-  return <Count />;
+  return (
+    <div>
+      <BasicAnimations />
+    </div>
+  );
 }
 export default App;

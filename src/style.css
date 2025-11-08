@@ -45,3 +45,9 @@ p {
   color: red;
   margin: 5px 0;
 }
+
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+}
