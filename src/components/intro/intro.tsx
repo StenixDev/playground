@@ -9,7 +9,7 @@ function Intro() {
         <div className="i-left-wrapper">
           <h2 className="i-intro text-2xl font-bold">Hello my name is</h2>
 
-          <h2 className="i-name font-semibold">Stenix xCode</h2>
+          <h2 className="i-name font-semibold">Stednix xCode</h2>
 
           <div className="i-title">
             <div className="i-title-wrapper">
