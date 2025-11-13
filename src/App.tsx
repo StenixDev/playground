@@ -1,7 +1,12 @@
+import About from "./components/about/about";
 import Intro from "./components/intro/intro";
-import Test from "./Test";
 
 function App() {
-  return <Test />;
+  return (
+    <div>
+      <Intro />
+      <About />
+    </div>
+  );
 }
 export default App;
