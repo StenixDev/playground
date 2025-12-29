@@ -1,16 +1,16 @@
-import { useState } from "react";
+import { z } from "zod";
+
+const userSchema = z.object({
+  firstName: z.string(),
+});
+
+const user = {
+  firstName: "stenix",
+};
+
+console.log(userSchema.parse(user));
 
 function App() {
-  const [darkMode, setDarkMode] = useState(false);
-
-  return (
-    <div className="dark">
-      <h1>Hello App</h1>
-
-      <button onClick={() => setDarkMode((cv) => !cv)}>
-        Dark Mode {darkMode ? "🌒" : "☀️"}
-      </button>
-    </div>
-  );
+  return <div>App</div>;
 }
 export default App;
