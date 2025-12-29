@@ -85,7 +85,6 @@ function Intro() {
           </g>
         </svg>
       </div>
-
       <div className="i-right">
         <div className="i-bg"></div>
         <img src={Profile} alt="" className="i-img" />
