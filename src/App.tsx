@@ -1,17 +1,23 @@
-import { useTheme } from "./hooks/useTheme";
+type Data = {
+  user: {
+    firstname: string;
+    age: number;
+    isActive: boolean;
+  };
+};
 
-function App() {
-  const { isDark, setIsDark } = useTheme();
+type Role = {
+  quantity: Data["user"]["age"];
+};
+
+function App({ user }: Data) {
+  const admin: Role = { quantity: 12 };
   return (
-    <>
-      <div
-        className={isDark ? "bg-gray-800 text-white" : "bg-white text-gray-800"}
-      >
-        App
-      </div>
-
-      <button onClick={() => setIsDark((cv) => !cv)}>Click me</button>
-    </>
+    <div>
+      <h1>TS Object Types</h1>
+      firstname: {user.firstname}
+      role: {admin.quantity}
+    </div>
   );
 }
 export default App;
