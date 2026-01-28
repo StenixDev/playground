@@ -1,22 +1,45 @@
-type Data = {
-  user: {
-    firstname: string;
-    age: number;
-    isActive: boolean;
-  };
-};
+import { useState, useEffect } from "react";
 
-type Role = {
-  quantity: Data["user"]["age"];
-};
+function App() {
+  const [input, setInput] = useState<string>("");
+  const [data, setData] = useState<string[]>(() => {
+    const saved = localStorage.getItem("data");
+    return saved ? JSON.parse(saved) : [];
+  });
 
-function App({ user }: Data) {
-  const admin: Role = { quantity: 12 };
+  useEffect(() => {
+    localStorage.setItem("data", JSON.stringify(data));
+  }, [data]);
+
+  function handleClick() {
+    if (!input.trim()) return;
+
+    setData((prev) => [...prev, input]);
+    setInput("");
+  }
   return (
     <div>
-      <h1>TS Object Types</h1>
-      firstname: {user.firstname}
-      role: {admin.quantity}
+      <input
+        type="text"
+        onChange={(e) => setInput(e.target.value)}
+        className="border"
+        value={input}
+      />
+      <button onClick={handleClick}>Save</button>
+
+      <hr />
+
+      <h2>Saved Data</h2>
+
+      {data.length === 0 ? (
+        "No saved data"
+      ) : (
+        <div>
+          {data.map((item, index) => (
+            <p key={index}>{item}</p>
+          ))}
+        </div>
+      )}
     </div>
   );
 }
