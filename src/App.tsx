@@ -5,7 +5,7 @@ const products = [
     name: "Traditional Baechu Kimchi",
     description:
       "Classic fermented napa cabbage with spicy chili paste, garlic, and ginger for an authentic bold flavor.",
-    price: "$8.99",
+    price: "₱ 120",
     image:
       "https://www.seriouseats.com/thmb/m16sray_HxYpJebVbXMxv906bhk=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/20210527-baechu-kimchi-vicky-wasik-seriouseats-seriouseats-3-18a2d6d7d1d74a7a82cb13ed350218be.jpg",
   },
@@ -13,7 +13,7 @@ const products = [
     name: "Kkakdugi Radish Kimchi",
     description:
       "Crunchy cubed Korean radish fermented with red chili flakes, offering a tangy and refreshing bite.",
-    price: "$7.49",
+    price: "₱ 120",
     image:
       "https://www.seriouseats.com/thmb/IOqbjFT8FbnnqWqxqASB9p5Rm1w=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/20210520-kkakdugi-radish-kimchi-Beauty-tim-chin-seriouseats-v2-f1f1ad5d4bb94470b80c79057504a5b1.jpg",
   },
@@ -21,35 +21,35 @@ const products = [
     name: "Oi Sobagi Cucumber Kimchi",
     description:
       "Stuffed cucumbers with a mix of vegetables and spices, providing a crisp, juicy, and mildly spicy taste.",
-    price: "$6.99",
+    price: "₱ 120",
     image: "https://i.ytimg.com/vi/ApQUENQbgiY/maxresdefault.jpg",
   },
   {
     name: "Nabak Kimchi Watery Kimchi",
     description:
       "Mild, soup-like kimchi with sliced radish and cabbage in a light brine, perfect for a subtle flavor.",
-    price: "$9.29",
+    price: "₱ 120",
     image: "https://i.ytimg.com/vi/LBJMJZdZEOQ/maxresdefault.jpg",
   },
   {
     name: "Yeolmu Kimchi Young Radish Kimchi",
     description:
       "Fermented young radish greens with stems, delivering a fresh, earthy, and slightly bitter profile.",
-    price: "$8.49",
+    price: "₱ 120",
     image: "https://www.maangchi.com/wp-content/uploads/2008/05/yeolmu.jpg",
   },
   {
     name: "Gat Kimchi Mustard Leaf Kimchi",
     description:
       "Bold mustard greens fermented with chili and seasonings, offering a peppery and robust kick.",
-    price: "$10.99",
+    price: "₱ 120",
     image: "https://i.ytimg.com/vi/j3xlC-VHjis/maxresdefault.jpg",
   },
   {
     name: "Pa Kimchi Green Onion Kimchi",
     description:
       "Aromatic green onions in a savory chili paste, ideal for adding depth to meals.",
-    price: "$7.99",
+    price: "₱ 120",
     image:
       "https://futuredish.com/wp-content/uploads/2018/04/GreenOnionKimchi3.jpg",
   },
@@ -57,7 +57,7 @@ const products = [
     name: "Chonggak Kimchi Pony Tail Radish Kimchi",
     description:
       "Whole ponytail radishes with greens, fermented for a crunchy texture and balanced spice.",
-    price: "$9.99",
+    price: "₱ 120",
     image:
       "https://crazykoreancooking.com/wp-content/uploads/2024/05/Ghongkak-Kimchi_Ponytail-Radish.jpg",
   },
@@ -65,14 +65,14 @@ const products = [
     name: "Dongchimi Radish Water Kimchi",
     description:
       "Clear, refreshing radish broth kimchi with a cool, tangy brine and minimal spice.",
-    price: "$8.79",
+    price: "₱ 120",
     image: "https://i.ytimg.com/vi/PEAlevkvuTI/maxresdefault.jpg",
   },
   {
     name: "Bossam Kimchi Wrapped Kimchi",
     description:
       "Cabbage wraps filled with seasoned ingredients, evoking traditional Korean royal cuisine.",
-    price: "$11.49",
+    price: "₱ 120",
     image: "https://gastrotourseoul.com/wp-content/uploads/2015/11/hyMaOm.jpg",
   },
 ];
@@ -145,15 +145,13 @@ function App() {
             <div className="contact-card email">
               <div className="icon">✉️</div>
               <h3>Email</h3>
-              <a href="mailto:orders@kimchiheaven.com">
-                orders@kimchiheaven.com
-              </a>
+              <a href="mailto:connect@stenix.dev">connect@stenix.dev</a>
             </div>
 
             <div className="contact-card phone">
               <div className="icon">📱</div>
               <h3>Phone / Viber / WhatsApp</h3>
-              <a href="tel:+639171234567">+63 917 123 4567</a>
+              <a href="tel:+639171234567">+63 9206203633</a>
             </div>
 
             <div className="contact-card location">
