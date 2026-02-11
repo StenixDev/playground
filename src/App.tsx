@@ -145,7 +145,7 @@ function App() {
             <div className="contact-card email">
               <div className="icon">✉️</div>
               <h3>Email</h3>
-              <a href="mailto:connect@stenix.dev">connect@stenix.dev</a>
+              <a href="mailto:connect@stenix.dev">email@domain.com</a>
             </div>
 
             <div className="contact-card phone">
@@ -157,10 +157,7 @@ function App() {
             <div className="contact-card location">
               <div className="icon">📍</div>
               <h3>Location</h3>
-              <p>
-                Davao City, Philippines(Shipping available nationwide & select
-                international)
-              </p>
+              <p>San Pedro St. Davao City, Philippines</p>
             </div>
           </div>
 
